@@ -11,10 +11,23 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
+  <header>
+  <h1 class="text-2xl">Mon site de manchots</h1>
+  <nav>
+    <ul>
+      <li><a class="text-blue-500 hover:underline" href="/">Accueil</a></li>
+      <li><a class="text-blue-500 hover:underline" href="/species/Adelie">Adelie</a></li>
+      <li><a class="text-blue-500 hover:underline" href="/species/Chinstrap">Chinstrap</a></li>
+      <li><a class="text-blue-500 hover:underline" href="/species/Gentoo">Gentoo</a></li>
+    </ul>
+  </nav>
+</header>
   <body>
     <slot />
   </body>
 </html>
+
+
 
 <style>
   html,
